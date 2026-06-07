@@ -105,7 +105,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const navMenu = document.getElementById('navigation-menu');
   const logoLink = document.getElementById('logo-link');
 
-  function switchTab(targetId) {
+  const DEFAULT_SECTION_ID = 'gioi-thieu';
+
+  function switchTab(targetId, options = {}) {
+    const {
+      updateUrl = true,
+      replace = false,
+      smoothScroll = true
+    } = options;
+
     sections.forEach(section => {
       section.classList.remove('active');
     });
@@ -113,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const targetSection = document.getElementById(targetId);
     if (targetSection) {
       targetSection.classList.add('active');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 0, behavior: smoothScroll ? 'smooth' : 'auto' });
     }
 
     navLinks.forEach(link => {
@@ -129,7 +137,17 @@ document.addEventListener('DOMContentLoaded', () => {
       mobileMenuBtn.querySelector('i').className = 'ph ph-list';
     }
 
-    history.pushState(null, null, `#${targetId}`);
+    if (updateUrl) {
+      const nextUrl = targetId === DEFAULT_SECTION_ID
+        ? `${window.location.pathname}${window.location.search}`
+        : `#${targetId}`;
+
+      if (replace) {
+        history.replaceState(null, '', nextUrl);
+      } else {
+        history.pushState(null, '', nextUrl);
+      }
+    }
   }
 
   navLinks.forEach(link => {
@@ -153,10 +171,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  const currentHash = window.location.hash.replace('#', '');
-  if (currentHash && ['gioi-thieu', 'du-an', 'tong-ket'].includes(currentHash)) {
-    switchTab(currentHash);
-  }
+  switchTab(DEFAULT_SECTION_ID, {
+    updateUrl: Boolean(window.location.hash),
+    replace: true,
+    smoothScroll: false
+  });
 
 
   // ==========================================
