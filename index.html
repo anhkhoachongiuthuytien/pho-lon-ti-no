@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Portfolio | Nhập môn Công nghệ số & Ứng dụng AI</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Website Portfolio cá nhân ghi lại hành trình học tập môn Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo. Minh chứng các bài tập thực hành ứng dụng công cụ số.">
+  <meta name="keywords" content="digital portfolio, công nghệ số, trí tuệ nhân tạo, AI, học tập, sinh viên, portfolio, canva, capcut, chatgpt">
+  <meta name="author" content="Hồ Anh Khoa">
+  
+  <!-- Favicon (Using modern SVG standard) -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  
+  <!-- Google Fonts - Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Phosphor Icons for modern vector glyphs -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  
+  <!-- Style Sheet with Cache Busting -->
+  <link rel="stylesheet" href="style.css?v=2.4">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header id="main-header">
+    <div class="nav-container">
+      <a href="#" class="logo-area" id="logo-link">
+        <img src="assets/images/logo.svg" alt="Digital Portfolio Logo" class="nav-logo">
+        <div class="logo-text">
+          <span class="logo-title">Digital Portfolio</span>
+          <span class="logo-subtitle">Môn học: NM Công nghệ số & AI</span>
+        </div>
+      </a>
+      
+      <!-- Hamburger Menu for Mobile -->
+      <button class="menu-toggle" id="mobile-menu-btn" aria-label="Mở menu điều hướng">
+        <i class="ph ph-list"></i>
+      </button>
+      
+      <!-- Nav Links -->
+      <nav class="nav-menu" id="navigation-menu">
+        <ul>
+          <li><a href="#gioi-thieu" class="nav-link active" data-target="gioi-thieu"><i class="ph ph-user"></i> Giới thiệu</a></li>
+          <li><a href="#du-an" class="nav-link" data-target="du-an"><i class="ph ph-folder-open"></i> Dự án</a></li>
+          <li><a href="#tong-ket" class="nav-link" data-target="tong-ket"><i class="ph ph-chart-line-up"></i> Tổng kết</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main class="content-wrapper">
+
+    <!-- 1. Trang Giới thiệu (Active by Default) -->
+    <section id="gioi-thieu" class="page-section active">
+      <!-- Hero Banner Area -->
+      <div class="hero-section">
+        <div class="hero-content">
+          <span class="hero-badge"><i class="ph ph-sparkle"></i> Welcome To My Digital Space</span>
+          <h1 class="hero-headline">Hồ Anh Khoa</h1>
+          <p class="hero-subtext-highlight">Ngành Khoa học máy tính | Trường Đại học Công nghệ</p>
+          <p class="hero-slogan" style="margin-bottom: 8px;">Lớp: K70-I-CS7</p>
+          <p class="hero-slogan">"Làm chủ các công cụ công nghệ số và Trí tuệ nhân tạo thế mới để bứt phá tư duy và tối ưu hóa năng suất học tập."</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary btn-lg scroll-trigger-btn" data-target="du-an">
+              <span>Khám phá dự án</span>
+              <i class="ph ph-arrow-right"></i>
+            </button>
+            <button class="btn btn-secondary btn-lg scroll-trigger-btn" data-target="tong-ket">
+              <span>Đọc tổng kết</span>
+            </button>
+          </div>
+        </div>
+        
+        <div class="hero-visual">
+          <div class="avatar-glow-ring"></div>
+          <img src="assets/images/avatar.jpg?v=2.3" alt="Chân dung Hồ Anh Khoa" class="hero-avatar">
+        </div>
+      </div>
+
+      <!-- Introduction Cards / Details -->
+      <div class="section-container">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+          
+          <!-- Card 1: Bản thân -->
+          <div class="intro-card">
+            <div class="card-icon-wrapper">
+              <i class="ph ph-user-focus"></i>
+            </div>
+            <h3 class="intro-card-title">Thông tin cá nhân</h3>
+            <ul class="intro-list">
+              <li><strong>Họ và tên:</strong> Hồ Anh Khoa</li>
+              <li><strong>Trường học:</strong> Trường Đại học Công nghệ (UET)</li>
+              <li><strong>Ngành học:</strong> Khoa học máy tính</li>
+              <li><strong>Lớp học:</strong> K70-I-CS7</li>
+              <li><strong>Sở thích:</strong> Nghiên cứu công nghệ, khám phá các mô hình Trí tuệ nhân tạo, thiết kế sản phẩm số trực quan, đọc sách khoa học và chơi thể thao.</li>
+            </ul>
+          </div>
+          
+          <!-- Card 2: Mục tiêu học tập -->
+          <div class="intro-card">
+            <div class="card-icon-wrapper">
+              <i class="ph ph-compass"></i>
+            </div>
+            <h3 class="intro-card-title">Mục tiêu học tập</h3>
+            <p class="intro-card-text">
+              Làm chủ các ứng dụng đám mây và công cụ thiết kế truyền thông số cơ bản. Nâng cao tư duy tương tác hiệu quả với các trợ lý AI thông qua Prompt Engineering, tạo nền tảng vững chắc để ứng dụng vào việc học tập chuyên sâu ngành Khoa học máy tính.
+            </p>
+          </div>
+          
+          <!-- Card 3: Mục tiêu Portfolio -->
+          <div class="intro-card">
+            <div class="card-icon-wrapper">
+              <i class="ph ph-folder-star"></i>
+            </div>
+            <h3 class="intro-card-title">Mục tiêu Portfolio</h3>
+            <p class="intro-card-text">
+              Hệ thống hóa toàn bộ kết quả thực hành từ Nhiệm vụ 1 đến Nhiệm vụ 6 của môn học một cách trực quan, khoa học. Đây là không gian lưu trữ minh chứng năng lực số hóa và tư duy giải quyết vấn đề bằng công nghệ của bản thân.
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Trang Dự án (Nhiệm vụ 1 - 6) -->
+    <section id="du-an" class="page-section">
+      <div class="section-header">
+        <span class="section-tag">Sản phẩm thực hành</span>
+        <h2 class="section-title">Hành Trình Dự Án Số</h2>
+        <p class="section-subtitle">Tổng hợp các sản phẩm ứng dụng công nghệ số và trí tuệ nhân tạo được hoàn thành trong khóa học.</p>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="filter-wrapper">
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">Tất cả</button>
+          <button class="filter-btn" data-filter="digital">Kỹ năng số</button>
+          <button class="filter-btn" data-filter="ai">Trí tuệ nhân tạo</button>
+          <button class="filter-btn" data-filter="group">Làm việc nhóm</button>
+        </div>
+      </div>
+
+      <!-- Projects Grid (6 Cards with alternating backgrounds) -->
+      <div class="projects-grid">
+        
+        <!-- Nhiệm vụ 1: Quản lý tệp và thư mục -->
+        <div class="project-card card-mint" data-category="digital">
+          <div class="card-image-wrapper">
+            <img src="assets/images/project-1.png" alt="Minh họa nhiệm vụ 1" class="card-img">
+            <span class="card-tag">Kỹ năng số</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Nhiệm vụ 1: Quản lý Tệp và Thư mục</h3>
+            <div class="card-meta">
+              <span class="meta-label">Mục tiêu công cụ:</span>
+              <p class="meta-text">Hệ thống hóa dữ liệu lưu trữ trực quan trên máy tính cá nhân và các dịch vụ đám mây (Google Drive/OneDrive).</p>
+            </div>
+            <p class="card-summary">
+              Thực hành xây dựng cây thư mục khoa học, thiết lập quy chuẩn đặt tên file hợp lý để thuận tiện tìm kiếm, kiểm soát các phiên bản tài liệu học tập và cấu hình phân quyền chia sẻ dữ liệu an toàn.
+            </p>
+            <div class="card-actions">
+              <a href="https://docs.google.com/document/d/14vJzLTlygNZ79_Kg0dy1WWaAUaV7YsQe/edit?usp=sharing&ouid=116835654666839805381&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm project-link-video" data-project="project1" data-title="Nhiệm vụ 1: Quản lý Tệp và Thư mục"><i class="ph ph-play-circle"></i> Xem sản phẩm</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nhiệm vụ 2: Tìm kiếm & đánh giá thông tin -->
+        <div class="project-card card-emerald" data-category="digital">
+          <div class="card-image-wrapper">
+            <img src="assets/images/project-2.png" alt="Minh họa nhiệm vụ 2" class="card-img">
+            <span class="card-tag">Kỹ năng số</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Nhiệm vụ 2: Tìm kiếm & Đánh giá Thông tin</h3>
+            <div class="card-meta">
+              <span class="meta-label">Mục tiêu công cụ:</span>
+              <p class="meta-text">Sử dụng các cú pháp nâng cao của bộ máy tìm kiếm (Google Advanced Search) và chọn lọc nguồn tư liệu nghiên cứu chuẩn.</p>
+            </div>
+            <p class="card-summary">
+              Thực hành tìm kiếm tài liệu nghiên cứu chuyên ngành trên Google Scholar và áp dụng tiêu chuẩn CRAAP (Tính cập nhật, độ phù hợp, thẩm quyền, độ chính xác, mục đích) để đánh giá độ tin cậy của thông tin trực tuyến.
+            </p>
+            <div class="card-actions">
+              <a href="https://docs.google.com/document/d/1fBe6cjVOSP6OOv8PT95ONH7boHf6niwO/edit?usp=sharing&ouid=116835654666839805381&rtpof=true&sd=tru" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm project-link-video" data-project="project2" data-title="Nhiệm vụ 2: Tìm kiếm & Đánh giá Thông tin"><i class="ph ph-play-circle"></i> Xem sản phẩm</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nhiệm vụ 3: Viết Prompt hiệu quả -->
+        <div class="project-card card-sage" data-category="ai">
+          <div class="card-image-wrapper">
+            <img src="assets/images/project-3.png?v=2.1" alt="Minh họa nhiệm vụ 3" class="card-img">
+            <span class="card-tag">Trí tuệ nhân tạo</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Nhiệm vụ 3: Thử nghiệm & Đánh giá Hiệu quả Prompt Engineering trong Học tập</h3>
+            <div class="card-meta">
+              <span class="meta-label">Mục tiêu công cụ:</span>
+              <p class="meta-text">Ứng dụng kỹ thuật cấu trúc câu lệnh (Prompt Engineering) để tương tác tối ưu với ChatGPT/Claude.</p>
+            </div>
+            <p class="card-summary">
+              Thiết kế các bộ prompt mẫu đa dạng theo ngữ cảnh (đóng vai chuyên gia, tóm tắt báo cáo dài, gợi ý ý tưởng và giải quyết các bài toán logic) nhằm biến AI thành trợ lý đắc lực giải quyết bài toán nhanh.
+            </p>
+            <div class="card-actions">
+              <a href="https://docs.google.com/document/d/1W9UDTQpPSEGcTywg70yqvz8i2U11PMHT/edit?usp=sharing&ouid=116835654666839805381&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm project-link-video" data-project="project3" data-title="Nhiệm vụ 3: Thử nghiệm & Đánh giá Hiệu quả Prompt Engineering trong Học tập"><i class="ph ph-play-circle"></i> Xem sản phẩm</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nhiệm vụ 4: Hợp tác trực tuyến -->
+        <div class="project-card card-forest-light" data-category="group">
+          <div class="card-image-wrapper">
+            <img src="assets/images/project-4.png" alt="Minh họa nhiệm vụ 4" class="card-img">
+            <span class="card-tag">Làm việc nhóm</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Nhiệm vụ 4: Hợp tác Trực tuyến & Quản trị Dự án</h3>
+            <div class="card-meta">
+              <span class="meta-label">Mục tiêu công cụ:</span>
+              <p class="meta-text">Phối hợp nhóm trực tuyến hiệu quả qua các ứng dụng đám mây (Google Workspace, Trello).</p>
+            </div>
+            <p class="card-summary">
+              Lập bảng phân bổ công việc nhóm và theo dõi tiến độ bằng phương pháp Kanban trên Trello, đồng soạn thảo nội dung báo cáo trên Google Docs/Slides thời gian thực và họp trực tuyến qua MS Teams.
+            </p>
+            <div class="card-actions">
+              <a href="https://docs.google.com/document/d/1KGM-FNOOPYN4CgzXNPpciTfXGU4nxB2O/edit?usp=sharing&ouid=116835654666839805381&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm project-link-video" data-project="project4" data-title="Nhiệm vụ 4: Hợp tác trực tuyến"><i class="ph ph-play-circle"></i> Xem sản phẩm</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nhiệm vụ 5: Sáng tạo nội dung với AI -->
+        <div class="project-card card-mint" data-category="ai,digital">
+          <div class="card-image-wrapper">
+            <img src="assets/images/project-5.png" alt="Minh họa nhiệm vụ 5" class="card-img">
+            <span class="card-tag">AI & Kỹ năng số</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Nhiệm vụ 5: Sáng tạo Nội dung cùng AI</h3>
+            <div class="card-meta">
+              <span class="meta-label">Mục tiêu công cụ:</span>
+              <p class="meta-text">Ứng dụng các nền tảng AI tạo ảnh nghệ thuật (Midjourney/Bing Creator) và biên tập nội dung số (Canva/CapCut).</p>
+            </div>
+            <p class="card-summary">
+              Sử dụng AI tạo ra các ấn phẩm hình ảnh minh họa chất lượng cao, thiết kế bộ slide truyền thông chuẩn cấu trúc và màu sắc trên Canva và dựng video ngắn 60 giây giới thiệu dự án bằng công cụ CapCut AI.
+            </p>
+            <div class="card-actions">
+              <a href="https://docs.google.com/document/d/1T0G7XsqZ7yVlyUHkXQoECdyfdcpgBN2O/edit?usp=sharing&ouid=116835654666839805381&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm project-link-video" data-project="project5" data-title="Nhiệm vụ 5: Sáng tạo Nội dung cùng AI"><i class="ph ph-play-circle"></i> Xem sản phẩm</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nhiệm vụ 6: AI có trách nhiệm -->
+        <div class="project-card card-emerald" data-category="ai">
+          <div class="card-image-wrapper">
+            <img src="assets/images/project-6.png" alt="Minh họa nhiệm vụ 6" class="card-img">
+            <span class="card-tag">Trí tuệ nhân tạo</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Nhiệm vụ 6: Tìm hiểu & Thực hành AI có Trách nhiệm</h3>
+            <div class="card-meta">
+              <span class="meta-label">Mục tiêu công cụ:</span>
+              <p class="meta-text">Nhận thức các khía cạnh an toàn thông tin, đạo đức sáng tạo dữ liệu và tính chính trực khi sử dụng AI học đường.</p>
+            </div>
+            <p class="card-summary">
+              Phân tích các rủi ro về định kiến dữ liệu và vi phạm bản quyền sáng tạo của AI. Xây dựng bản cam kết sử dụng AI văn minh, tuân thủ nguyên tắc tôn trọng chất xám học thuật và bảo mật thông tin cá nhân.
+            </p>
+            <div class="card-actions">
+              <a href="https://docs.google.com/document/d/1WVTJnWkur8Vuxo_sxjryKJ3FbD5KLd45/edit?usp=sharing&ouid=116835654666839805381&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm project-link-video" data-project="project6" data-title="Nhiệm vụ 6: AI có trách nhiệm"><i class="ph ph-play-circle"></i> Xem sản phẩm</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. Trang Tổng kết (Tổng kết và đánh giá bản thân dạng Bento Dashboard) -->
+    <section id="tong-ket" class="page-section">
+      <div class="section-header">
+        <span class="section-tag">Nhìn lại hành trình</span>
+        <h2 class="section-title">Tổng Kết & Đánh Giá Bản Thân</h2>
+        <p class="section-subtitle">Phân tích chuyên sâu về sự trưởng thành năng lực ứng dụng công nghệ, giải quyết thách thức và định hướng phát triển tương lai số.</p>
+      </div>
+
+      <!-- Bento Grid Layout (6 Cards - Rich Information) -->
+      <div class="bento-grid">
+        
+        <!-- Card 1: Bento Span 2 (Kiến thức và Kỹ năng số đạt được) -->
+        <div class="bento-card bento-span-2">
+          <span class="bento-badge badge-knowledge">Kiến thức & Kỹ năng số đạt được</span>
+          <h3 class="bento-title"><i class="ph ph-chart-bar"></i> Sự tăng trưởng năng lực công nghệ số</h3>
+          <p class="bento-desc" style="margin-bottom: 16px;">
+            Môn học đã thay đổi tư duy làm việc của em từ phương pháp thủ công sang tích hợp công cụ số. Em tự đánh giá mức độ tiến bộ vượt bậc của bản thân qua các chỉ số kỹ năng số cụ thể dưới đây:
+          </p>
+          
+          <!-- Skill Progress bars -->
+          <div class="skill-progress-container">
+            <div class="skill-progress-item">
+              <div class="skill-info">
+                <span>Quản trị tài liệu & Lưu trữ dữ liệu đám mây (Google Drive, OneDrive)</span>
+                <span class="skill-percent">95%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 95%;"></div>
+              </div>
+            </div>
+            
+            <div class="skill-progress-item">
+              <div class="skill-info">
+                <span>Thiết kế truyền thông & Biên tập video (Canva, CapCut AI)</span>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-progress-item">
+              <div class="skill-info">
+                <span>Prompt Engineering & Khai thác thông tin (ChatGPT, Claude, Advanced Search)</span>
+                <span class="skill-percent">92%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 92%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Danh sách công cụ số làm chủ -->
+        <div class="bento-card">
+          <span class="bento-badge badge-knowledge" style="background-color: hsl(120, 20%, 94%); color: hsl(120, 60%, 20%);">Hệ sinh thái công cụ</span>
+          <h3 class="bento-title"><i class="ph ph-toolbox"></i> Công cụ làm chủ</h3>
+          <p class="bento-desc">
+            Trong suốt quá trình học tập, em đã được thực hành, làm chủ và ứng dụng nhuần nhuyễn bộ công cụ số hiện đại sau:
+          </p>
+          <div class="tags-container">
+            <span class="tag-pill">Canva Pro</span>
+            <span class="tag-pill">CapCut AI</span>
+            <span class="tag-pill">Google Drive</span>
+            <span class="tag-pill">ChatGPT</span>
+            <span class="tag-pill">Claude AI</span>
+            <span class="tag-pill">Trello Kanban</span>
+            <span class="tag-pill">Google Scholar</span>
+            <span class="tag-pill">Bitwarden</span>
+            <span class="tag-pill">MS Teams</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Thách thức & Khó khăn đã vượt qua -->
+        <div class="bento-card">
+          <span class="bento-badge badge-challenge">Thách thức & Khó khăn</span>
+          <h3 class="bento-title"><i class="ph ph-fire"></i> Trở ngại & Khắc phục</h3>
+          
+          <div class="evaluation-box box-challenge">
+            <span class="box-tag tag-warning"><i class="ph ph-warning-circle"></i> Thách thức lớn nhất</span>
+            <p class="box-text">Ban đầu em gặp khó khăn trong việc thiết lập câu lệnh (prompt) tối ưu cho AI, dẫn đến việc các câu trả lời của chatbot bị chung chung hoặc có hiện tượng ảo tưởng thông tin.</p>
+          </div>
+          
+          <div class="evaluation-box box-solution">
+            <span class="box-tag tag-success"><i class="ph ph-check-circle"></i> Giải pháp khắc phục</span>
+            <p class="box-text">Em đã học cách áp dụng cấu trúc Prompt chuyên nghiệp (giao vai trò cụ thể, cung cấp dữ liệu đầu vào chuẩn, giới hạn định dạng đầu ra và tạo chuỗi câu lệnh logic) để định hướng kết quả trả về chuẩn xác.</p>
+          </div>
+        </div>
+
+        <!-- Card 4: Trải nghiệm hợp tác nhóm trực tuyến -->
+        <div class="bento-card bento-span-2">
+          <span class="bento-badge badge-experience" style="background-color: hsl(200, 45%, 96%); color: hsl(200, 70%, 30%);">Trải nghiệm hợp tác đám mây</span>
+          <h3 class="bento-title"><i class="ph ph-users-three"></i> Hợp tác trực tuyến & Quản trị dự án nhóm</h3>
+          <p class="bento-desc" style="margin-bottom: 12px;">
+            Nhờ có Trello, nhóm của chúng em đã số hóa hoàn toàn tiến độ công việc bằng bảng Kanban trực quan. Mọi thành viên đều biết rõ nhiệm vụ cần làm, việc đang làm và việc đã hoàn tất mà không cần họp hành trực tiếp liên tục.
+          </p>
+          <p class="bento-desc">
+            Quy trình làm việc nhóm trở nên tối giản và chuyên nghiệp hơn nhờ soạn thảo tài liệu đồng thời trên Google Workspace (Docs, Slides) và thảo luận nhanh qua Teams. Chúng em đã vượt qua rào cản thời gian để hoàn thành dự án cuối kỳ đúng hạn.
+          </p>
+        </div>
+
+        <!-- Card 5: Nhận thức Đạo đức AI -->
+        <div class="bento-card">
+          <span class="bento-badge badge-challenge" style="background-color: hsl(350, 60%, 96%); color: hsl(350, 70%, 30%);">Đạo đức số học đường</span>
+          <h3 class="bento-title"><i class="ph ph-shield-check"></i> Trách nhiệm & Chính trực</h3>
+          <p class="bento-desc" style="margin-bottom: 12px;">
+            Sử dụng AI có trách nhiệm không chỉ là bảo vệ tài khoản cá nhân trực tuyến, mà là tuân thủ đạo đức học đường: nói không với sao chép nguyên bản sản phẩm của AI và luôn chú thích nguồn gốc minh bạch khi tham khảo.
+          </p>
+          <p class="bento-desc">
+            AI là người cố vấn, gợi mở tư duy, không phải là công cụ viết hộ thay thế cho năng lực tư duy độc lập của người học.
+          </p>
+        </div>
+
+        <!-- Card 6: Bento Span 2 (Chỉ số đo lường học tập & Định hướng tương lai) -->
+        <div class="bento-card bento-span-2">
+          <span class="bento-badge badge-experience">Chỉ số đo lường học tập</span>
+          <h3 class="bento-title"><i class="ph ph-compass"></i> Bảng số liệu trưởng thành & Định hướng Khoa học máy tính</h3>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6" style="margin-bottom: 20px;">
+            <div class="metric-box">
+              <span class="metric-value">06</span>
+              <span class="metric-label">Nhiệm vụ hoàn thiện</span>
+            </div>
+            <div class="metric-box">
+              <span class="metric-value">12+</span>
+              <span class="metric-label">Công cụ số thuần thục</span>
+            </div>
+            <div class="metric-box">
+              <span class="metric-value">100%</span>
+              <span class="metric-label">Chính trực học thuật</span>
+            </div>
+          </div>
+          
+          <div class="quote-container">
+            <p class="quote-text">
+              "Trí tuệ nhân tạo thế hệ mới không thay thế nhà phát triển, nhưng những kỹ sư Khoa học máy tính biết khai thác sức mạnh của Canva, CapCut và các kỹ thuật Prompt Engineering chắc chắn sẽ đi đầu trong kỷ nguyên số hóa."
+            </p>
+            <span class="quote-author">— Hồ Anh Khoa (Định hướng ứng dụng Khoa học máy tính)</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Action Area -->
+      <div class="action-footer-container">
+        <p class="action-footer-text">Cảm ơn thầy cô và các bạn đã ghé thăm Digital Portfolio này!</p>
+        <button class="btn btn-primary scroll-to-top-btn" id="footer-top-btn">
+          <i class="ph ph-arrow-up"></i>
+          <span>Quay về đầu trang</span>
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Area -->
+  <footer id="main-footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="assets/images/logo.svg" alt="Digital Portfolio Logo Small" class="footer-logo-img">
+        <span>Digital Portfolio</span>
+      </div>
+      <p class="footer-text">
+        &copy; 2026 Hồ Anh Khoa. Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Video Playback Modal -->
+  <div class="modal-overlay" id="video-modal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-title-text">Tên bài tập minh họa</h3>
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Đóng cửa sổ">
+          <i class="ph ph-x"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="video-player-wrapper">
+          <video id="modal-video-player" controls>
+            <source src="assets/video/project-demo.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ phát video.
+          </video>
+        </div>
+        <div class="modal-instruction-box">
+          <p class="instruction-title"><i class="ph ph-info"></i> Hướng dẫn thay thế minh chứng:</p>
+          <p class="instruction-body">
+            Để hiển thị video thuyết trình thực tế của bạn, vui lòng sao chép tệp video `.mp4` của bạn vào thư mục <strong>assets/video/</strong> và đặt tên là <strong>project-demo.mp4</strong> (hoặc cập nhật đường dẫn video trong tệp `index.html` của từng bài tập tương ứng).
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Float Back to Top Button -->
+  <button id="back-to-top-btn" class="back-to-top" aria-label="Cuộn lên đầu trang">
+    <i class="ph ph-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript file -->
+  <script src="script.js?v=2.4"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# Ignore agent temporary files and scratch scripts
+scratch/
+taste-skill/
+node_modules/
+.DS_Store
+*.log
